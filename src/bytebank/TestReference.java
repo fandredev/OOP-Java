@@ -4,11 +4,11 @@ public class TestReference {
 
 	public static void main(String[] args) {
 		Account firstAccount = new Account();
-		firstAccount.balance = 300;
-		System.out.println("saldo primeira conta: " + firstAccount.balance);
+		firstAccount.deposit_value(300);
+		System.out.println("saldo primeira conta: " + firstAccount.getBalance());
 
 		Account secondAccount = firstAccount;
-		System.out.println("saldo segunda conta: " + secondAccount.balance);
+		System.out.println("saldo segunda conta: " + secondAccount.getBalance());
 
 		if(firstAccount == secondAccount) 
 			System.out.println("é a mesma conta");
